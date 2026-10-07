@@ -1,0 +1,29 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.home-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .home-heading {
+    font-size: 22px;
+  }
+  .post-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
